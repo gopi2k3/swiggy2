@@ -1,0 +1,315 @@
+.time{
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    color: white;
+    border-top: 6px solid red;
+    margin:auto ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: rotate 0.8s infinite linear;
+}
+
+@keyframes rotate {
+    0%{
+
+        transform: rotate(0deg) scale(1.1);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+
+	background-color:black;
+	color:white;
+}
+.head-row{
+	padding:30px 0;
+}
+.navbar{
+	display:flex;
+	justify-content:space-between;
+	font-size:25px;
+
+}
+.navbar a{
+	text-decoration:none;
+	color:white;
+	padding-left:20px;
+}
+span{
+	padding-right:26px;
+}
+.container{
+	width:80%;
+	margin:auto;
+}
+.col{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+.card{
+	width:26%;
+	margin-bottom:20px;
+	box-shadow:0 0 10px #ccc;
+	padding:5px;
+}
+img{
+	width:100%;
+	height:250px;
+}
+.img-content{
+	display:flex;
+	
+	justify-content:space-evenly;
+	align-items:center;
+}
+.title{
+	padding:20px 0;
+	font-size:25px;
+}
+/* .cart-icon{
+	background-color:orange;
+	color:white;
+	padding:10px 20px;
+} */
+.log{
+	color:white;
+}
+/* cart box */
+.cart-box{
+	/* position:fixed; */
+	top:0;
+    padding:20px;
+    margin: 10px auto;
+    background-color:white;
+	width:410px;
+	/* height:100vh; */
+	box-shadow:0 0 6px #ccc;
+	
+	right:-100%;
+transition: 0.5s;	
+}
+.cart-active{
+  right:0;
+  transition: 0.5s;
+}
+
+
+.navbar-icon{
+	cursor:pointer;
+}
+.cart-title{
+	    padding-right: 76px;
+    font-size: 20px;
+}
+.cartbox-iconclose{
+	text-align:end;
+	font-size:35px;
+}
+.cartbox-btn{
+
+ 
+    padding: 12px;
+    align-items: center;
+}
+
+.cartbox-btn button{
+	outline:none;
+	background-color:orange;
+	padding:10px 20px;
+	
+}
+.cartbox-innercol{
+	display:flex;
+	justify-content:end;
+	border-bottom:1px solid gray;
+}
+.cartbox-innercol1{
+	display:flex;
+	justify-content:space-between;
+	    padding: 20px 0;
+}
+
+.cart-mainbox img{
+	width:120px;
+	height:120px;
+	    padding: 4px;
+    border: 1px solid;
+	
+}
+.cart-mainbox{
+	    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center
+}
+.cart-food-title{
+	    text-align: center;
+    padding: 10px 0;
+    font-size: 23px;
+	color:red;
+}
+.order-removei{
+	font-size:20px;
+	color:red;
+}
+.cart-quantity{
+	width:35px;
+}
+
+
+nav{
+	/* width: 100%; */
+	position: sticky;
+	top: 0;
+	z-index: 200;
+	box-shadow: 0 0 14px #ccc;
+	background-color: white;
+	
+	
+ }
+.nav-row{
+	width: 80%;
+	margin: auto;	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+ .nav-col1{
+	width: 20%;
+ }
+ .nav-col1 img{
+	width: 105px;
+	height: 105px;
+	margin: auto;
+ }
+ .nav-col2 i{
+	font-size: 25px;
+	font-weight: 600;
+ }
+
+ a{
+	text-decoration: none;
+	color:black;
+	font-size: 25px ;
+  font-weight: 600;
+}	
+@media(min-width:320px){
+	
+.row1{
+	width: 98%;
+	display: block;
+}
+.col1{
+	width: 100%;
+
+}
+.col2{
+	width: 100%;
+}
+}
+@media(min-width:720px){
+
+	.row1{
+		width: 95%;
+		display:flex;
+	}
+	.col1{
+		width: 50%;
+	
+	}
+	.col2{
+		width: 50%;
+	}
+}
+@media(min-width:1000px){
+
+	.row1{
+		width: 95%;
+		margin: auto;
+		display: flex;
+	}
+	.col1{
+		width: 70%;
+	
+	}
+	.col2{
+		width: 30%;
+	}
+}
+
+.row1{
+	padding-top: 30px;
+}
+.col2{
+	box-shadow: 0 0 10px #ccc;
+	/* max-height: 200px; */
+	border-left: 5px solid orange ;
+	border-radius: 8px;
+}
+
+
+.order-btn{
+	
+	width: 30%;
+	margin: auto;
+	height: 40px;
+	/* background-color: orange; */
+	/* color: white; */
+	border: none;
+	outline: none;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	font-size: 15px ;
+	font-weight: 600;
+	transition: 0.3s linear;
+	border-top-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+
+}
+.order-btn::after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: orange;
+	width: 0%;
+	height: 40px;
+	z-index: -1;
+	transition: 0.3s linear;
+	border-top-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+
+}
+.order-btn:hover::after{
+	transition: 0.3s linear;
+	width: 100%;
+
+}
+.order-btn:hover{
+	cursor: pointer;
+	color: white;
+	transition: 0.3s linear;
+
+}
