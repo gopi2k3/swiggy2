@@ -114,7 +114,7 @@ function update(){
 
        let qty=e.querySelector('.cart-quantity').value
 
-       total=total+(realPrice*qty)
+       total+=realPrice*qty
 
 		e.querySelector(".cart-amt").innerHTML="Rs."+(realPrice*qty)
 
